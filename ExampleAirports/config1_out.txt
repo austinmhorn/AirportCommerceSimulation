@@ -1,0 +1,133 @@
+Beginning simulation
+Please enter the name of the configuration file:config1.txt
+Initial Zone State
+------------------
+|    T # T T T   |
+|C C C - I I T   |
+|C C C - I I T P |
+|C C C - I I T   |
+|- - - - - - # - |
+|    - D D D T   |
+|    - D D D     |
+|    - D D D     |
+------------------
+
+Time Step: 1
+Available Workers 2 Available Goods 0
+------------------
+|    T # T T T   |
+|C C C - I I T   |
+|C C C - I I T P |
+|C C C - I I T   |
+|- - - - - - # - |
+|    - D D 1 T   |
+|    - D D 1     |
+|    - D D D     |
+------------------
+
+Time Step: 2
+Available Workers 4 Available Goods 1
+------------------
+|    T # T T T   |
+|C 1 C - I I T   |
+|C C C - I I T P |
+|C C C - I I T   |
+|- - - - - - # - |
+|    - D 1 1 T   |
+|    - D 1 1     |
+|    - D 1 1     |
+------------------
+
+Time Step: 3
+Available Workers 10 Available Goods 1
+------------------
+|    T # T T T   |
+|1 1 C - 1 I T   |
+|C C C - I I T P |
+|C C C - I I T   |
+|- - - - - - # - |
+|    - 1 2 2 T   |
+|    - 1 2 2     |
+|    - 1 2 2     |
+------------------
+
+Time Step: 4
+Available Workers 6 Available Goods 4
+------------------
+|    T # T T T   |
+|1 1 1 - 1 1 T   |
+|1 1 1 - I I T P |
+|C C C - I I T   |
+|- - - - - - # - |
+|    - 2 2 2 T   |
+|    - 2 3 3     |
+|    - 2 2 2     |
+------------------
+
+Time Step: 5
+Available Workers 4 Available Goods 2
+------------------
+|    T # T T T   |
+|1 2 1 - 1 1 T   |
+|1 1 1 - 1 1 T P |
+|C C C - I 1 T   |
+|- - - - - - # - |
+|    - 2 3 2 T   |
+|    - 3 3 3     |
+|    - 2 3 2     |
+------------------
+
+Time Step: 6
+Available Workers 0 Available Goods 1
+------------------
+|    T # T T T   |
+|1 2 1 - 1 1 T   |
+|1 2 1 - 2 2 T P |
+|C C C - I 1 T   |
+|- - - - - - # - |
+|    - 2 3 2 T   |
+|    - 3 3 3     |
+|    - 2 3 2     |
+------------------
+
+
+Final Region State
+------------------
+|    T # T T T   |
+|1 2 1 - 1 1 T   |
+|1 2 1 - 2 2 T P |
+|C C C - I 1 T   |
+|- - - - - - # - |
+|    - 2 3 2 T   |
+|    - 3 3 3     |
+|    - 2 3 2     |
+------------------
+
+Pollution
+------------------
+|1 1 1 0 0 0 0 0 |
+|1 2 1 0 0 0 0 0 |
+|1 2 1 0 0 0 0 0 |
+|1 1 1 0 0 0 0 0 |
+|0 0 0 0 0 0 0 0 |
+|0 0 0 0 0 0 0 0 |
+|0 0 0 0 0 0 0 0 |
+|0 0 0 0 0 0 0 0 |
+------------------
+
+The total populations for the zone are:
+Domestic: 23
+Cargo: 8
+International: 7
+The total amount of pollution in the zone is 14 units.
+Please enter the diagonal corners of the area you wish to have more information about. (MinX = 0, MinY = 0, MaxX = 7, MaxY = 7)
+X1:0
+Y1:0
+X2:4
+Y2:4
+The total populations for the requested area are:
+Domestic: 0
+Cargo: 8
+International: 3
+The total amount of pollution for the requested area is 14 units.
+Simulation complete
