@@ -10,31 +10,31 @@ CC := g++ -std=c++11
 CFLAGS := -Wall -c
 
 # build target
-TARGET := AirportSimulation
+TARGET := AirportCommerceSimulation
 
 $(TARGET): main.o Airport.o Sector.o
 	@echo "Creating target..."
 	@$(CC) main.o Airport.o Sector.o -o $(TARGET)
-	@echo "Target created successfully."
+	@echo "Target created successfully: " $(TARGET)
 
 main.o: main.cpp main.hpp Sector.hpp Airport.hpp
-	@echo "Updating main.o..."
+	@echo "Building main.o..."
 	@$(CC) $(CFLAGS) main.cpp
-	@echo "Complete."
+	@echo "Done."
 
 Sector.o: Sector.cpp Sector.hpp
-	@echo "Updating Sector.o..."
+	@echo "Building Sector.o..."
 	@$(CC) $(CFLAGS) Sector.cpp
-	@echo "Complete."
+	@echo "Done."
 
 Airport.o: Airport.cpp Airport.hpp
-	@echo "Updating Airport.o..."
+	@echo "Building Airport.o..."
 	@$(CC) $(CFLAGS) Airport.cpp
-	@echo "Complete."
+	@echo "Done."
 
 clean:
-	rm *.o
-	rm AirportSimulation
+	@echo "Cleaning..."
+	rm core $(TARGET) *.o
 
 run:
-	./AirportSimulation
+	./$(TARGET)
